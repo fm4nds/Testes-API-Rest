@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TesteConsultarUsuarios {
     @Test
-    @DisplayName("Valida a consulta e estrutura da lista de usuários via GET /users")
+    @DisplayName("CT01 - Valida a consulta e estrutura da lista de usuários via GET /users")
     void verificarUsuariosComUsernameEPasswordValidos() {
         Response response = ClienteConsultaUsuarios.consultarUsuarios();
 
@@ -29,7 +29,7 @@ public class TesteConsultarUsuarios {
     }
 
     @Test
-    @DisplayName("Valida se os campos username e password são do tipo string na resposta de GET /users")
+    @DisplayName("CT02 - Valida se os campos username e password são do tipo string na resposta de GET /users")
     void verificarSeUsernameEPasswordSaoTipoString() {
         Response response = ClienteConsultaUsuarios.consultarUsuarios();
 
@@ -40,5 +40,5 @@ public class TesteConsultarUsuarios {
             assertInstanceOf(String.class, usuario.get("username"), "Username deve ser String");
             assertInstanceOf(String.class, usuario.get("password"), "Password deve ser String");
         });
-}
+    }
 }

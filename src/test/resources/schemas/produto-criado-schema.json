@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer", "minimum": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "price": { "type": "number", "minimum": 0 },
+    "stock": { "type": "integer", "minimum": 0 },
+    "discountPercentage": { "type": "number"},
+    "rating": { "type": "number", "minimum": 0, "maximum": 5 },
+    "thumbnail": { "type": "string", "format": "uri" },
+    "description": { "type": "string" },
+    "brand": { "type": "string" },
+    "category": { "type": "string" }
+  },
+  "required": ["id", "title", "price", "stock", "category", "discountPercentage"],
+  "additionalProperties": false
+}

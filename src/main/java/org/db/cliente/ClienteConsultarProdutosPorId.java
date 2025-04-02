@@ -2,13 +2,11 @@ package org.db.cliente;
 
 import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.given;
 import static org.db.configuracao.ConfiguracaoAmbienteTestes.configurarRequisicao;
 
-public class ClienteConsultaUsuarios {
-
-    public static Response consultarUsuarios() {
+public class ClienteConsultarProdutosPorId {
+    public static Response consultarProdutoPorId(int id) {
         return configurarRequisicao()
-                .get("/users");
+                .get("/products/{id}", id);
     }
 }
