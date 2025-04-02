@@ -19,9 +19,10 @@ O projeto cobre os seguintes endpoints:
 - GET /products/{id} - Busca de produto por ID
 
 <h2>Como executar</h2>
-git clone https://gitlab.com/projeto-db/projeto-db.git > cd projeto-db > mvn clean test 
-o projeto utiliza um Makefile para facilitar a execução dos testes e gerenciamento de dependências. 
-basta executar make help para obter informações de comandos disponiveis
+git clone https://github.com/fm4nds/testes-api-rest > cd testes-api-rest > mvn clean test 
+
+O projeto utiliza um Makefile para facilitar a execução dos testes e gerenciamento de dependências. 
+Basta executar make help para obter informações de comandos disponíveis.
 
 <h2> Plano de Teste </h2>
 <b>Dados do Projeto/Pessoas Envolvidas</b>
