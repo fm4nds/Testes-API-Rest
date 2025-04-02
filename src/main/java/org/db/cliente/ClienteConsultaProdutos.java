@@ -2,7 +2,6 @@ package org.db.cliente;
 
 
 import io.restassured.response.Response;
-import org.db.configuracao.ConfiguracaoAmbienteTestes;
 
 import static org.db.configuracao.ConfiguracaoAmbienteTestes.configurarRequisicao;
 
